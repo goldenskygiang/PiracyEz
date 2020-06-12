@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IEnumerable<Film>
+
+<h1>Films</h1>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li><a asp-action="Watch" asp-route-id="@item.FilmId">@item.Title</a></li>
+    }
+</ul>

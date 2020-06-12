@@ -1,0 +1,10 @@
+﻿@{ 
+    ViewData["Title"] = Model.Title;
+}
+
+@model Film
+
+<h1>Watch</h1>
+<h4>@Model.Title</h4>
+
+<video src="@Model.RawUrl" controls></video>
